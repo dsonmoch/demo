@@ -8,9 +8,12 @@ export default async function ServicesBanner() {
     const data: any = await fetchFromStrapi("services")
 
     return (
-        <div className="flex flex-col bg-primary justify-between items-center gap-20 items-center width-full bg-fuchsia-900 xl:mt-30 mt-10 sm:px-40 md:px-50 px-20 py-15">
-            <h1 className="md:text-5xl text-4xl font-bold text-light">What we provide?</h1>
-        
+        <div className="flex flex-col bg-light justify-between items-center gap-20 items-center width-full xl:mt-30 mt-10 px-10 xl:px-20 py-15">
+            <div className="flex flex-col gap-3 items-center w-full">
+                <h1 className="md:text-5xl text-4xl font-bold text-dark">What we provide?</h1>
+                <h2 className="text-xl font-bold text-dark text-justify">Comprehensive social media solutions tailored to<i className="text-primary font-extrabold"> Grow Your Brand</i></h2>
+            </div>
+            
             <CardLight />
             </div>
     )

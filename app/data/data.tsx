@@ -21,23 +21,44 @@ export const menuList = [
 export const services = [
     {
         "key":1,
-        "title":"Social Media Marketing",
-        "imageUrl": "/Images/platforms/social.png",
-        "description":"From content to conversion — we craft social experiences that spark engagement and deliver measurable growth."
+        "title":"Social Media Management",
+        "imageUrl": "/Images/services-section/social-m.png",
+        "description":"Full-service management of your social media presence across all platforms with consistent posting and community engagement."
     },
     {
         "key":2,
-        "title":"AI Automation",
-        "imageUrl": "/Images/platforms/ai.png",
-        "description":"Automate your workflows and boost productivity with AI-driven systems that handle repetitive tasks, and improve efficiency."
+        "title":"Content Creation",
+        "imageUrl": "/Images/services-section/content-creator.png",
+        "description":"Eye-catching visuals, compelling copy, and engaging videos designed to stop the scroll and drive action."
     },
     {
         "key":3,
-        "title":"Creative Branding",
-        "imageUrl": "/Images/platforms/branding.png",
-        "description":"Build a powerful, recognizable brand with creative design, strong visuals, and a strategy that connects with your audience."
+        "title":"Paid Advertising",
+        "imageUrl": "/Images/services-section/ads.png",
+        "description":"Strategic ad campaigns that maximize ROI through precise targeting and continuous optimization."
 
     },
+    {
+        "key":4,
+        "title":"Analytics & Reporting",
+        "imageUrl": "/Images/services-section/analytics.png",
+        "description":"In-depth performance analysis with actionable insights to continuously improve your social media strategy."
+
+    },
+    {
+        "key":5,
+        "title":"Website Development",
+        "imageUrl": "/Images/services-section/world.png",
+        "description":"Build a powerful, recognizable brand with creative design, strong visuals, website."
+
+    },
+    {
+        "key":6,
+        "title":"AI Automation",
+        "imageUrl": "/Images/services-section/ai-model.png",
+        "description":"Automate your workflows and boost productivity with AI-driven systems that handle repetitive tasks, and improve efficiency."
+
+    }
 ]
 
 export const platforms = [
