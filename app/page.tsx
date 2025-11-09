@@ -3,6 +3,7 @@ import VideoTextBanner from "./homepage/vide-text-banner";
 import ServicesBanner from "./homepage/services-banner";
 import PlatformBanner from "./homepage/platform-banner";
 import Footer from "./components/footer";
+import ResultSection from "./homepage/result-section";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <VideoTextBanner />
       <ServicesBanner />
       {/* <AutoScrollBanner /> */}
+      <ResultSection />
       <PlatformBanner />
       <Footer/>
     </div>
