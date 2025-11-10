@@ -13,13 +13,13 @@ export default function ProvenCard() {
                     <div className="flex flex-row gap-0 h-60 items-start p-5">
                         {data.key % 2 === 0 ? (
                         <>
-                        <TextSection description={data.description} title={data.title} key={data.key}/>
-                        <VideoSection image={data.image} key={data.key} />
+                        <TextSection description={data.description} title={data.title} isEven={true} delay={data.key * 0.2}/>
+                        <VideoSection image={data.image} isEven={true} delay={data.key * 0.2 + 0.15} />
                         </>
                     ) : (
                         <>
-                        <VideoSection image={data.image} key={data.key} />
-                        <TextSection description={data.description} title={data.title} key={data.key}/>
+                        <VideoSection image={data.image} isEven={false} delay={data.key * 0.2} />
+                        <TextSection description={data.description} title={data.title} isEven={false} delay={data.key * 0.2 + 0.15}/>
                         </>
 )}
                         
