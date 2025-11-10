@@ -13,6 +13,7 @@ export default function CallToActionSection() {
             <h1 className="text-4xl text-dark font-extrabold text-center">
                 Ready to <i className="text-secondary">GROW</i> with us?
             </h1>
+
             <h2 className="text-lg text-dark text-center">
                 Let's discuss how we can help your brand achieve remarkable growth through strategic digital marketing.
             </h2>
