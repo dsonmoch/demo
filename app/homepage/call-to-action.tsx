@@ -14,7 +14,6 @@ export default function CallToActionSection() {
                 Ready to <i className="text-secondary">GROW</i> with us?
             </h1>
             <h2 className="text-lg text-dark text-center">
-            <h2 className="text-lg text-dark text-center">
                 Let's discuss how we can help your brand achieve remarkable growth through strategic digital marketing.
             </h2>
             <div className="flex sm:flex-row flex-col gap-15 w-full items-center justify-center">
