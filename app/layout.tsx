@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "DataKit Studio",
   description: "Studio curated for you!",
+  icons: {
+    icon: "/favi.png",
+  },
 };
 
 export default function RootLayout({

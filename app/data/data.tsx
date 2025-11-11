@@ -186,44 +186,75 @@ export const platforms = [
 
 export const links = [
     {
-        name: "Home",
-        route: "/"
-    },
-    {
-        name: "About Us",
-        route: "/about"
-    },
-    {
-        name: "Contact",
-        route: "/contact"
-    },
-    {
-        name: "Services",
-        route: "/services"
-    },
-    {
-        name: "FAQ",
-        route: "/faq"
-    },
+        title: "Quick Links",
+        links:[
+            {
+                name: "Home",
+                route: "/"
+            },
+            {
+                name: "About Us",
+                route: "/about"
+            },
+            {
+                name: "Contact",
+                route: "/contact"
+            },
+            {
+                name: "Services",
+                route: "/services"
+            },
+            {
+                name: "FAQ",
+                route: "/faq"
+            },
+        ]
+    }
+    
 ]
 
 export const brand = [
     {
+        title:"Studio",
         name: "DataKit Studio",
-        logo: "/Images/footer-logo-white.png",
+        logo: "/Images/footer-log.png",
         copyright:"© 2025 DataKit Studio. All rights reserved." 
     }
 ]
 
+export const socialMedia = [
+    {
+        key:1,
+        image:"Facebook",
+        link:""
+    },
+    {
+        key:1,
+        image:"Instagram",
+        link:""
+    },
+    {
+        key:1,
+        image:"Twitter",
+        link:""
+    },
+    {
+        key:1,
+        image:"LinkedIn",
+        link:""
+    },
+]
+
 export const contact = [
     {
+        title:"Contact",
         address: "24th Street, Link Road, India - 245500",
         phone:9876543210,
         email:"hello@datakitstudio.in"
     }
 ]
 
-export const footer = [
+export const footerHeading = [
     {
         name: "Quick Links",
     }, {
