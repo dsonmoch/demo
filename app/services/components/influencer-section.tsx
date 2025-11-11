@@ -65,7 +65,7 @@ export default function InfluencerSection() {
                     </h3>
                 </div>
                 
-                <div className="flex flex-1 md:justify-center rounded-2xl  relative w-1/3 md:w-1/3 md:h-[300px] justify-center relative">
+                <div className="flex flex-1 md:justify-center rounded-2xl shadow-2xl shadow-fuchsia-400 overflow-hidden  relative w-1/3 md:w-1/3 md:h-[300px] justify-center relative">
                     <VideoPlayer videoUrl={videoData} />
                 </div>
             </div>
