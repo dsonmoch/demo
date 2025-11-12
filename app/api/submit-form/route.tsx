@@ -3,15 +3,13 @@ import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
-    console.log("GOOGLE_SERVICE_ACCOUNT_KEY exists:", !!process.env.GOOGLE_SERVICE_ACCOUNT_KEY);
   try {
-    const { name, email, message } = await req.json();
+    const { name, email, organization, phone, website, message, project, type } = await req.json();
 
-    if (!name || !email || !message) {
+    if (!name || !email || !message || !project) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
 
-    // 1️⃣ Append to Google Sheet
     const auth = new google.auth.GoogleAuth({
       credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_KEY!),
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
@@ -24,11 +22,10 @@ export async function POST(req: Request) {
       range: "Sheet1!A:D",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[name, email, message, new Date().toLocaleString()]],
+        values: [[name, email, phone,organization,website,project, message, new Date().toLocaleString()]],
       },
     });
 
-    // 2️⃣ Send Email Notification
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -38,14 +35,20 @@ export async function POST(req: Request) {
     });
 
     const mailOptions = {
-      from: `"Contact Form" <${process.env.EMAIL_USER}>`,
+      from: `${type==="Project Form"? "Project Form" : "Contact Form"} <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_TO,
-      subject: "📬 New Contact Form Submission",
+      subject: `📬 ${type==="Project Form"? "Project Form" : "Contact Form"} Form Submission`,
       text: `
-        You received a new message from your website contact form:
-            Name: ${name}
-            Email: ${email}
-            Message:
+          You received a new message from your website:
+
+          Form Type: ${type==="Project Form"? "Project Form" : "Contact Form"}
+
+          Details:
+
+          Name: ${name}
+          Email: ${email}
+
+          Message:
             ${message}
             `,
     };

@@ -45,8 +45,8 @@ export default function OurTeamSection() {
         <br /><br />
         From crafting strategies to fine-tuning details, we believe success comes from  teamwork, innovation, and 
         consistency. 
-        We don’t just create campaigns — we 
-        <span className="text-primary font-semibold"> build connections that last.</span>
+        We don’t just create campaigns — <span className="text-primary font-semibold">we 
+         build connections that last.</span>
       </m.p>
     </m.div>
   );

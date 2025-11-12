@@ -18,6 +18,7 @@ export default function ContactUsPage() {
     phone: "",
     message: "",
     website: "",
+    type:"Contact Form"
   });
 
   const [error, setError] = useState<string | null>(null);
@@ -49,6 +50,7 @@ export default function ContactUsPage() {
       phone: "",
       message: "",
       website: "",
+      type:"Contact Form"
     });
   } else {
     toast.error("Something went wrong. Please try again.");

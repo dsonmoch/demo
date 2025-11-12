@@ -30,7 +30,7 @@ export default function Footer() {
                                     const Icon = (Icons as any)[image];
                                     if(!Icon) return null
                                     return(
-                                        <a className="text-light">
+                                        <a className="text-light" href={link}>
                                             <Icon />
                                         </a>
                                     )

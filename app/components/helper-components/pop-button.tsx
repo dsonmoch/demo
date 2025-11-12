@@ -11,6 +11,10 @@ type PopButtonProp = {
 
 export default function PopButton(data: PopButtonProp) {
     return(
-        <m.button onClick={data.onClick} className="bg-primary text-white px-20 py-5 font-extrabold text-lg rounded-4xl shadow-md" whileHover={{scale:1.1}} transition={{duration:1, ease:"easeOut"}}>{data.text}</m.button>
+        <m.button onClick={data.onClick} className="
+        bg-light text-dark border border-fuchsia-300 hover:bg-primary hover:text-light text-dark px-20 py-5 font-extrabold text-lg rounded-4xl hover:shadow-lg shadow-md shadow-fuchsia-300" 
+        whileHover={{scale:1.1}} 
+        transition={{duration:1, ease:"easeOut"}}
+        >{data.text}</m.button>
     )
 }

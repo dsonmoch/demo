@@ -56,7 +56,7 @@ export default function InfluencerSection() {
                 <div className="flex flex-2 flex-col gap-10">
                     <div className="flex flex-col items-start gap-5">
                 <h1 className="text-4xl text-primary font-extrabold">Are you an influencer looking for help?</h1>
-                <h2 className="text-xl text-secondary font-bold">This is what we have for you.</h2>
+                <h2 className="text-xl text-primary font-bold">This is what we have for you.</h2>
             </div>
                     <h3 className=" text-dark text-lg text-justify">
                         Whether you’re just starting out or already growing fast, we’ve got everything you need to build your brand, boost engagement, and grow your income. From content strategy and brand partnerships to audience analytics and creative design — our team helps you stand out, stay consistent, and focus on what you do best: creating amazing content.

@@ -226,12 +226,12 @@ export const socialMedia = [
     {
         key:1,
         image:"Facebook",
-        link:""
+        link:"https://www.facebook.com/datakitstudio01"
     },
     {
         key:1,
         image:"Instagram",
-        link:""
+        link:"https://www.instagram.com/datakitstudioofficial"
     },
     {
         key:1,
@@ -248,9 +248,9 @@ export const socialMedia = [
 export const contact = [
     {
         title:"Contact",
-        address: "24th Street, Link Road, India - 245500",
-        phone:9876543210,
-        email:"hello@datakitstudio.in"
+        address: "Guwahati, Assam, India - 781036",
+        phone:"7002498166, 7002284047",
+        email:"hello@datakitstudio.com"
     }
 ]
 
