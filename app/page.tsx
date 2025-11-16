@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full bg-light">
       <Header />
+
       <VideoTextBanner />
       <ServicesBanner />
       {/* <AutoScrollBanner /> */}
@@ -21,9 +22,9 @@ export default function Home() {
       <PlatformBanner />
       <ProvenProcess />
       <WhyUsSection />
-      <CallToActionSection/>
-      <Footer/>
-      <ScrollToTopButton/>
+      <CallToActionSection />
+      <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

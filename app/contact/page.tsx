@@ -11,7 +11,7 @@ export default function Contact() {
             <Header />
             <CallToActionSection />
             <Footer />
-            <ScrollToTopButton/>
+            <ScrollToTopButton />
         </div>
     )
 }

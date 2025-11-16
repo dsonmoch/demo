@@ -6,13 +6,15 @@
   --foreground: #171717;
 
   /* 🎨 Brand Colors */
-  --color-primary: #701a75;  /* fuchsia-900 */
-  --color-secondary:#E11D48;
-  --color-accent:#22D3EE;
+  --color-primary: #701a75;
+  /* fuchsia-900 */
+  --color-secondary: #E11D48;
+  --color-accent: #22D3EE;
   --color-background: #0F172A;
-  --color-highlight:#BEF264;
+  --color-highlight: #BEF264;
   --color-light: #fff;
   --color-dark: #000000;
+  --color-gradient-pink: #e58ae7;
 }
 
 /* 🌒 Dark Mode */
@@ -36,9 +38,7 @@
   --color-accent: var(--color-accent);
   --color-background: var(--color-background);
   --color-highlight: var(--color-highlight);
-
-  /* Text Colors (usable as text-light / text-dark) */
-  --color-light: var(--color-light);
+  --color-gradient-pink: var(--color-gradient-pink) --color-light: var(--color-light);
   --color-dark: var(--color-dark);
 
   /* Fonts */
@@ -55,8 +55,13 @@ body {
 
 /* ✨ Animation Example */
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
