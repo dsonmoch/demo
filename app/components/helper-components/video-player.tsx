@@ -7,6 +7,6 @@ type VideoPlayerProp = {
 
 export default function VideoPlayer({ videoUrl }: VideoPlayerProp) {
     return (
-        <Lottie width={200} height={200} animationData={videoUrl} loop autoplay />
+        <Lottie className="w-full h-full" animationData={videoUrl} loop autoplay />
     )
 }
