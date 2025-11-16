@@ -47,9 +47,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-* {
-  outline: 1px solid red !important;
-}
 
 /* 🧠 Global Styles */
 html,
@@ -57,9 +54,12 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  overflow-x: clip;
+  /* DOES NOT break sticky */
   /* overflow-x: hidden !important; */
   width: 100%;
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
   /* position: relative; */
 }
 
