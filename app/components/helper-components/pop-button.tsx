@@ -15,7 +15,7 @@ export default function PopButton(data: PopButtonProp) {
     const Icon = data.icon ? (Icons as any)[data.icon] : null;
 
     const baseClasses =
-        "relative bg-light text-light border border-fuchsia-300 hover:bg-gradient-to-r from-fuchsia-900 to-[#f081f3] hover:text-white px-20 py-5 font-extrabold text-lg rounded-4xl hover:shadow-lg shadow-md shadow-fuchsia-300 overflow-hidden";
+        "relative bg-light text-dark border border-fuchsia-300 hover:bg-gradient-to-r from-fuchsia-900 to-[#f081f3] hover:text-light px-20 py-5 font-extrabold text-lg rounded-4xl hover:shadow-lg shadow-md shadow-fuchsia-300 overflow-hidden";
 
     return (
         <m.button

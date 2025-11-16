@@ -38,7 +38,8 @@
   --color-accent: var(--color-accent);
   --color-background: var(--color-background);
   --color-highlight: var(--color-highlight);
-  --color-gradient-pink: var(--color-gradient-pink) --color-light: var(--color-light);
+  --color-gradient-pink: var(--color-gradient-pink);
+  --color-light: var(--color-light);
   --color-dark: var(--color-dark);
 
   /* Fonts */
