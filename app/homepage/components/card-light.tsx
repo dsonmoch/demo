@@ -7,14 +7,18 @@ import { services } from "@/app/data/data"
 export default function CardLight() {
 
     return (
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-4  xl:flex-row  items-center justify-center gap-10 width-full">
+        <div className="grid grid-cols-2  xl:flex-row  items-center justify-center width-full">
             {
                 services.map((service) => (
                     <m.div key={service.key} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeOut" }} viewport={{ once: true, amount: 0.3 }}
-                        whileHover={{ scale: 1.05 }} className="flex gap-5 p-5 flex-col justify-around md:items-start items-center backdrop-blur-md bg-white/20 border-2 border-primary/30 shadow-lg shadow-fuchsia-300 xl:w-[300] w-full lg:h-80 h-auto  rounded-2xl ">
-                        <Image src={service.imageUrl} width={70} height={100} alt={service.title} />
-                        <h1 className="text-xl text-primary font-extrabold">{service.title}</h1>
-                        <h1 className="text-md text-dark">{service.description}</h1>
+                        whileHover={{ scale: 1.05 }} className="flex gap-5 p-5 flex-row md:items-start items-center w-full h-auto ">
+
+                        <Image src={service.imageUrl} width={30} height={50} alt={service.title} />
+                        <div>
+                            <h1 className="text-md text-dark font-bold">{service.title}</h1>
+                            <h1 className="text-sm text-dark">{service.description}</h1>
+                        </div>
+
                     </m.div>
                 ))
             }
