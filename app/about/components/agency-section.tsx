@@ -5,7 +5,7 @@ import { motion as m } from "framer-motion";
 
 export default function AgencySection() {
   return (
-    <section className="flex flex-col items-center gap-10 w-[90%] lg:w-[75%] mx-auto p-10">
+    <section className="flex flex-col gap-10 items-center w-[90%] lg:w-[75%] mx-auto">
       {/* Heading */}
       <m.h1
         initial={{ opacity: 0, y: -20 }}
@@ -18,7 +18,7 @@ export default function AgencySection() {
       </m.h1>
 
       {/* Main Content */}
-      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-5">
         {/* Image Section */}
         <m.div
           initial={{ opacity: 0, x: -50 }}

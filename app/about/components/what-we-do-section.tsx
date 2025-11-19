@@ -17,7 +17,7 @@ export default function WhatWeDo() {
       </m.h1>
 
       {/* Content Layout */}
-      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-5">
         {/* Image Section */}
         <m.div
           initial={{ opacity: 0, x: -50 }}

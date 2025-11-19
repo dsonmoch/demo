@@ -11,7 +11,7 @@ export default function OurPromiseSection() {
       </h1>
 
       {/* Content Layout */}
-      <div className="flex flex-col md:flex-row items-center gap-10">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-5">
         {/* Text Section (2/3 width on md+) */}
         <div className="w-full md:w-2/3 order-2 md:order-1">
           <p className="text-justify text-gray-700 leading-relaxed text-sm md:text-base">
