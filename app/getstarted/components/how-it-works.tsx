@@ -91,7 +91,7 @@ export default function HowItWorksSection() {
                                     <div
                                         key={i}
                                     >
-                                        <h3 className="font-bold text-xl mb-1">{index.title}</h3>
+                                        <h3 className="font-bold text-dark text-xl mb-1">{index.title}</h3>
                                         <p className="text-gray-600">{index.desc}</p>
                                     </div>
                                 ) : (

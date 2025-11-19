@@ -67,74 +67,81 @@ export default function FormSection() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-10 py-10 bg-fuchsia-100/40">
-      <Toaster position="top-center" reverseOrder={false} />
-      <h1 className="text-6xl sm-text-7xl  font-extrabold bg-gradient-to-b from-fuchsia-900 via-[#f081f3] to-[#a3a9ce] bg-clip-text text-transparent">Your info please</h1>
-      <form className="flex flex-col gap-10 w-[80%] sm:w-[60%] lg:w-[40%]" onSubmit={handleSubmit}>
-        {error && <p className="text-red-500 text-sm">{error}</p>}
-        <input
-          name="name"
-          onChange={handleChange}
-          value={formData.name}
-          className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
-          placeholder="Full Name*"
-          required
-        />
+    <div className="w-full flex flex-col bg-fuchsia-100/40 items-center">
 
-        <input
-          name="email"
-          onChange={handleChange}
-          value={formData.email}
-          className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
-          placeholder="Email*"
-          required
-        />
 
-        <input
-          name="phone"
-          onChange={handleChange}
-          value={formData.phone}
-          className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
-          placeholder="Phone Number"
-        />
+      <div className="flex flex-col items-center w-[95%] lg:w-[40%] items-center gap-10 py-10 ">
+        <Toaster position="top-center" reverseOrder={false} />
+        <h1 className="text-6xl sm-text-7xl  font-bold bg-gradient-to-b from-fuchsia-900 via-[#f081f3] to-[#a3a9ce] bg-clip-text text-transparent">Your info please</h1>
+        <div>
 
-        <input
-          name="organization"
-          onChange={handleChange}
-          value={formData.organization}
-          className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
-          placeholder="Company / Brand Name"
-        />
-
-        <select
-          name="project"
-          onChange={handleChange}
-          value={formData.project}
-          required
-          className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
-        >
-          <option value="">Select Project Type</option>
-          <option value="Brand Strategy">Brand Strategy</option>
-          <option value="Social Media Marketing">Social Media Marketing</option>
-          <option value="Web Development">Web Development</option>
-          <option value="Video Production">Video Production</option>
-          <option value="Other">Other</option>
-        </select>
-
-        <textarea
-          name="message"
-          required
-          onChange={handleChange}
-          value={formData.message}
-          className="p-3 border rounded-md text-dark min-h-[150px] focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
-          placeholder="Tell us more about your project..."
-        />
-
-        {/* Button */}
-        <div className="flex justify-center pt-4">
-          <PopButton text="Submit Project" icon="SendHorizontal" />
         </div>
-      </form>
+        <form className="flex flex-col flex-grow-0 w-full gap-10 " onSubmit={handleSubmit}>
+          {error && <p className="text-red-500 text-sm">{error}</p>}
+          <input
+            name="name"
+            onChange={handleChange}
+            value={formData.name}
+            className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+            placeholder="Full Name*"
+            required
+          />
+
+          <input
+            name="email"
+            onChange={handleChange}
+            value={formData.email}
+            className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+            placeholder="Email*"
+            required
+          />
+
+          <input
+            name="phone"
+            onChange={handleChange}
+            value={formData.phone}
+            className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+            placeholder="Phone Number"
+          />
+
+          <input
+            name="organization"
+            onChange={handleChange}
+            value={formData.organization}
+            className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+            placeholder="Company / Brand Name"
+          />
+
+          <select
+            name="project"
+            onChange={handleChange}
+            value={formData.project}
+            required
+            className="p-3 border rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+          >
+            <option value="">Select Project Type</option>
+            <option value="Brand Strategy">Brand Strategy</option>
+            <option value="Social Media Marketing">Social Media Marketing</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Video Production">Video Production</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <textarea
+            name="message"
+            required
+            onChange={handleChange}
+            value={formData.message}
+            className="p-3 border rounded-md text-dark min-h-[150px] focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+            placeholder="Tell us more about your project..."
+          />
+
+          {/* Button */}
+          <div className="flex justify-center pt-4">
+            <PopButton text="Submit Project" icon="SendHorizontal" />
+          </div>
+        </form>
+      </div>
     </div>
   )
 }
