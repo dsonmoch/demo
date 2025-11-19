@@ -10,7 +10,8 @@ type VideoPlayerProp = {
 
 export default function VideoPlayer({ videoUrl, className }: VideoPlayerProp) {
 
-    const ref = useRef(null);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const lottieRef = useRef<any>(null);
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -21,26 +22,31 @@ export default function VideoPlayer({ videoUrl, className }: VideoPlayerProp) {
                 });
             },
             {
-                threshold: 0.1,
-                rootMargin: "100px"
+                threshold: 0.2,
+                rootMargin: "200px"
             }
         );
 
-        if (ref.current) observer.observe(ref.current);
+        if (containerRef.current) observer.observe(containerRef.current);
 
         return () => observer.disconnect();
     }, []);
 
+    useEffect(() => {
+        if (!lottieRef.current) return;
+        if (isVisible) lottieRef.current.play();
+        else lottieRef.current.pause();
+    }, [isVisible]);
+
     return (
-        <div ref={ref} className={className}>
-            {isVisible && (
-                <Lottie
-                    animationData={videoUrl}
-                    loop
-                    autoplay
-                    style={{ width: "100%", height: "100%" }}
-                />
-            )}
+        <div ref={containerRef} className={className}>
+            <Lottie
+                lottieRef={lottieRef}
+                animationData={videoUrl}
+                autoplay={false}
+                loop
+                style={{ width: "100%", height: "100%" }}
+            />
         </div>
     );
 }
