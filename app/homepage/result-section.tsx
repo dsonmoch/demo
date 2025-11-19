@@ -16,10 +16,10 @@ export default function ResultSection() {
                 </div>
 
                 <div className="relative w-full h-full z-10">
-                    <VideoPlayer
+                    {/* <VideoPlayer
                         videoUrl={VideoUrl}
                         className="absolute top-0 left-0 object-fill z-0"
-                    />
+                    /> */}
                     <ResultCard />
                 </div>
             </div>
