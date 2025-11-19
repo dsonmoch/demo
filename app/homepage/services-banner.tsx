@@ -15,9 +15,7 @@ export default function ServicesBanner() {
                 <VideoPlayer videoUrl={BackgroundVideo} className="absolute md:top-0 sm:top-0 -top-50 left-0 w-full h-full blur-xl object-cover -z-1" />
                 <div className="flex flex-col gap-10 pb-10 items-center w-full">
                     <div className="w-full flex flex-col items-center">
-                        <div className="w-auto h-43">
-                            <VideoPlayer videoUrl={VideoData} />
-                        </div>
+                        <VideoPlayer videoUrl={VideoData} className="w-auto h-43" />
                         <h1 className="md:text-7xl text-5xl bg-gradient-to-b from-fuchsia-900 to-[#f081f3] bg-clip-text text-transparent font-bold text-dark">What we provide?</h1>
                     </div>
 
