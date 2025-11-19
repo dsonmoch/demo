@@ -3,7 +3,7 @@ import VideoBanner from "../about/components/videobanner"
 import VideoPlayer from "../components/helper-components/video-player"
 import CardLight from "./components/card-light"
 import VideoData from "@/public/Videos/homepage/service-arrow.json"
-import BackgroundVideo from "@/public/Videos/homepage/background.json"
+import BackgroundVideo from "@/public/Videos/homepage/background-animation.json"
 import NormalButton from "../components/helper-components/normal-button"
 
 
@@ -12,7 +12,7 @@ export default function ServicesBanner() {
     return (
         <div className="flex flex-col bg-light justify-between items-center gap-20 items-center width-full py-10">
             <div className="flex flex-col items-center backdrop-blur-md bg-white/20 shadow-xl shadow-fuchsia-100 lg:w-[75%] w-[95%] h-auto py-10 px-10  rounded-2xl ">
-                <VideoPlayer videoUrl={BackgroundVideo} className="absolute md:top-0 sm:top-0 -top-50 left-0 w-full h-full blur-xl object-cover -z-1" />
+                <VideoPlayer videoUrl={BackgroundVideo} className="absolute md:top-0 sm:top-0 -top-50 left-0 w-full h-full object-cover -z-1" />
                 <div className="flex flex-col gap-10 pb-10 items-center w-full">
                     <div className="w-full flex flex-col items-center">
                         <VideoPlayer videoUrl={VideoData} className="w-auto h-43" />

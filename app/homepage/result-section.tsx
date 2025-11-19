@@ -1,6 +1,6 @@
 import VideoPlayer from "../components/helper-components/video-player";
 import ResultCard from "./components/result-card";
-import VideoUrl from "@/public/Videos/homepage/background-service.json"
+import VideoUrl from "@/public/Videos/homepage/background-result.json"
 
 
 export default function ResultSection() {
@@ -18,7 +18,7 @@ export default function ResultSection() {
                 <div className="relative w-full h-full z-10">
                     <VideoPlayer
                         videoUrl={VideoUrl}
-                        className="absolute top-0 left-0 blur-sm object-fill z-0"
+                        className="absolute top-0 left-0 object-fill z-0"
                     />
                     <ResultCard />
                 </div>
