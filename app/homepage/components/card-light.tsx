@@ -11,7 +11,7 @@ export default function CardLight() {
             {
                 services.map((service) => (
                     <m.div key={service.key} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeOut" }} viewport={{ once: true, amount: 0.3 }}
-                        whileHover={{ scale: 1.05 }} className="flex gap-5 p-5 flex-row md:items-start items-center w-full h-auto ">
+                        whileHover={{ scale: 1.05 }} className="flex gap-5 md:p-5 py-5 flex-row md:items-start items-center w-full h-auto ">
 
                         <Image src={service.imageUrl} width={30} height={50} alt={service.title} />
                         <div>
