@@ -63,7 +63,7 @@ export default function Header({ className = "" }: { className?: string }) {
             src="/Images/logo-header-main.png"
             height={64}
             width={200}
-            alt="House of Influenca logo"
+            alt="Datakitstudio logo"
             priority
           />
         </div>
