@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/next"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import InitialLoader from "./components/initial-loader";
 <meta name="color-scheme" content="light only" />
 
 const geistSans = Geist({
@@ -35,7 +36,9 @@ export default function RootLayout({
       >
         <SpeedInsights />
         <Analytics />
-        {children}
+        <InitialLoader>
+          {children}
+        </InitialLoader>
       </body>
     </html>
   );
