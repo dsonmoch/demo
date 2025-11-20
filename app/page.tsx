@@ -14,10 +14,7 @@ export default function Home() {
 
       <VideoTextBanner />
       <ServicesBanner />
-      {/* <AutoScrollBanner /> */}
       <ResultSection />
-      {/* <PlatformBanner /> */}
-      {/* <ProvenProcess /> */}
       <WhyUsSection />
       <CallToActionSection />
       <Footer />
