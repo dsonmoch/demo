@@ -1,4 +1,4 @@
-
+"use client"
 import Image from "next/image";
 import VideoPlayer from "../components/helper-components/video-player";
 import PopButton from "../components/helper-components/pop-button";
